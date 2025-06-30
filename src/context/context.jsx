@@ -1,4 +1,3 @@
-// context.jsx
 import { createContext, useContext, useState } from 'react';
 import {Task} from "../models/Task.js";
 import {SortType} from "../data/SortType.js";

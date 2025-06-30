@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './App.css'
-import {Task} from "./models/Task.js";
 import TaskItem from "./components/TaskItem/TaskItem.jsx";
 import TaskCreation from "./components/TaskCreation/TaskCreation.jsx";
 import {useTasksContext} from "./context/context.jsx";

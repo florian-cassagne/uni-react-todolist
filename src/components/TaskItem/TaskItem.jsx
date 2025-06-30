@@ -1,7 +1,6 @@
 import '../../App.css'
 import "./taskitem.css"
 import {useTasksContext} from "../../context/context.jsx";
-import {Task} from "../../models/Task.js";
 
 function TaskItem({task}) {
 
