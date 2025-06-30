@@ -1,7 +1,6 @@
 import '../../App.css'
 import "./taskcreation.css"
 import {useTasksContext} from "../../context/context.jsx";
-import {Task} from "../../models/Task.js";
 import TaskFormTitle from "./TaskFormElements/TaskFormTitle.jsx";
 import TaskFormPriority from "./TaskFormElements/TaskFormPriority.jsx";
 import TaskFormDate from "./TaskFormElements/TaskFormDate.jsx";
@@ -16,6 +15,7 @@ function TaskEdition({task}) {
   const [date, setDate] = useState('')
   const [priority, setPriority] = useState(5)
   const [color, setColor] = useState('#101010')
+
 
   useEffect(() => {
     setTitle(task.title)

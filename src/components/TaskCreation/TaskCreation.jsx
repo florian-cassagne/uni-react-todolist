@@ -2,7 +2,6 @@ import '../../App.css'
 import "./taskcreation.css"
 import {useTasksContext} from "../../context/context.jsx";
 import {Task} from "../../models/Task.js";
-import {Component} from "react";
 import TaskFormTitle from "./TaskFormElements/TaskFormTitle.jsx";
 import TaskFormPriority from "./TaskFormElements/TaskFormPriority.jsx";
 import TaskFormDate from "./TaskFormElements/TaskFormDate.jsx";

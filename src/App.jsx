@@ -3,7 +3,7 @@ import './App.css'
 import {Task} from "./models/Task.js";
 import TaskItem from "./components/TaskItem/TaskItem.jsx";
 import TaskCreation from "./components/TaskCreation/TaskCreation.jsx";
-import {TasksProvider, useTasksContext} from "./context/context.jsx";
+import {useTasksContext} from "./context/context.jsx";
 import TaskEdition from "./components/TaskCreation/TaskEdition.jsx";
 import TaskSorter from "./components/TaskSorter/TaskSorter.jsx";
 import {SortType} from "./data/SortType.js";
@@ -14,7 +14,7 @@ import TaskResearcher from "./components/TaskResearcher/TaskResearcher.jsx";
 
 function App() {
 
-  const [data, setData] = useTasksContext()
+  const [data] = useTasksContext()
 
   const [taskSearch, setTaskSearch] = useState('')
 
@@ -29,6 +29,7 @@ function App() {
   else if(data.filterBy === FilterType.IMPORTANT){
     tasksDisplay = tasksDisplay.filter(task => task.priority >= 7)
   }
+
 
   if(data.sortBy === SortType.PRIORITY){
     tasksDisplay.sort((a,b) => b.priority - a.priority);

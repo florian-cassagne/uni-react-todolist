@@ -6,12 +6,11 @@ import {FilterType} from "../data/FilterType.js";
 
 const TasksContext = createContext(null);
 
-// On crée un "custom hook" qui appelle useContext
+
 export function useTasksContext() {
     return useContext(TasksContext);
 }
 
-// Le Provider qui enveloppe l'application
 export function TasksProvider({ children }) {
     const taskDefault = [
         new Task({

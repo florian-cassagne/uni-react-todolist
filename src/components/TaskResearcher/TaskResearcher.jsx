@@ -1,9 +1,4 @@
-import {useTasksContext} from "../../context/context.jsx";
-import {SortType} from "../../data/SortType.js";
-
-
-export default function TaskResearcher({taskSearch, setTaskSearch}) {
-  const [data, setData] = useTasksContext();
+export default function TaskResearcher({setTaskSearch}) {
 
   const handleChange = e => {
     setTaskSearch(e.target.value);
