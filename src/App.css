@@ -1,0 +1,17 @@
+#root {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tasks{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.my-1{
+  margin-top:1em;
+  margin-bottom:1em;
+}

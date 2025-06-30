@@ -1,0 +1,44 @@
+.task{
+    border:1px white solid;
+    margin:0.5em;
+    min-width:300px;
+    width:100%;
+    background-color: rgb(16,16,16);
+    display:flex;
+    align-items: center;
+    border-radius: 4em
+}
+
+.task.in-edit{
+    border:4px greenyellow solid;
+}
+
+.task.done .task-title{
+    text-decoration: line-through;
+}
+
+.task:not(.done) .task-title{
+    font-weight: bold;
+}
+
+.task-content{
+    padding:1em;
+    width:33%;
+}
+
+.task-content span{
+    margin-left:1em
+}
+
+.task-infos{
+
+}
+
+.task-nav{
+
+}
+
+
+.text-left{
+    text-align: left;
+}

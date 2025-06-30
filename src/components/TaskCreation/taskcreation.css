@@ -1,0 +1,13 @@
+.task-editor{
+    margin: 1em 1em 2em;
+}
+
+.task-editor-form{
+    display:flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.task-editor-form div{
+    margin: 1em 2em;
+}
