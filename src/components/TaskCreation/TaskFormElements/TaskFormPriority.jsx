@@ -10,7 +10,7 @@ function TaskFormPriority ({priority, onChange}) {
               onChange={onChange}
       >
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(p => (
-          <option value={p}>{p}</option>
+          <option key={p} value={p}>{p}</option>
         ))}
       </select>
     </div>
